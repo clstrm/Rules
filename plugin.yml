@@ -1,0 +1,6 @@
+name: Rules
+main: clusterstorm.rules.Rules
+version: 1.0
+author: ClusterStorm
+commands:
+  rules:

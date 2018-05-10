@@ -1,0 +1,100 @@
+items:
+  '1':
+    id: BOOK
+    slot: 1
+    name: '&fBasic provisions'
+    lore: 
+    - '1. Playing on the server, you fully accept the server''s user agreement.'
+    - '2. Ignorance of the rules does not absolve you from liability.'
+    - '3. The server administration has the right to change the rules'
+    - '  without notifying the players.'
+    - '4. In some cases, the administration has the right to impose sanctions'
+    - '  on the player for a reason not specified in the rules.'
+  '2':
+    id: REDSTONE_COMPARATOR
+    slot: 2
+    name: '&fAccount'
+    lore: 
+    # Load text from https://pastebin.com/raw/6ECHAP82
+    - 'pastebin: 6ECHAP82'
+  '3':
+    id: DIAMOND_PICKAXE
+    slot: 3
+    name: '&fGameplay'
+    lore: 
+    - 'pastebin: z5Z55nsa'
+  '4':
+    id: GRASS
+    slot: 4
+    name: '&fWorld'
+    lore: 
+    - 'pastebin: wbhv89pA'
+  '5':
+    id: PAPER
+    slot: 5
+    name: '&fChat'
+    lore: 
+    - 'pastebin: AquUTVR1'
+  '6':
+    id: DIAMOND
+    slot: 6
+    name: '&fDonation terms'
+    lore: 
+    - 'pastebin: hUwXqqRW'
+  '7':
+    id: EYE_OF_ENDER
+    slot: 7
+    name: '&fRules for donors'
+    lore: 
+    - 'pastebin: pLgFRfeG'
+    # Item will be enchanted
+    ench: true
+    
+    
+
+inventory:
+  name: '&0Rules'
+  # Menu that opening by command /rules
+  simpleMenuRows: 1
+  # Menu with buttons which opens when player join
+  comfirmMenuRows: 3
+
+# Accept button
+accept:
+  slot: 21
+  id: EMERALD_BLOCK
+  name: '&aAgree'
+
+# Deny button
+deny:
+  slot: 23
+  id: REDSTONE_BLOCK
+  name: '&cDisagree'
+  
+
+# When player joins the server, he must click 'Agree' in rules inventory
+# He will not be able to close menu and play on server until he accept the rules
+useConfirmation: true
+
+# If true, menu will be opened not on join but on login or register
+authmeHook: true
+
+# Whether to reload texts form pastebin on every server startup
+reloadPastebinOnStart: true
+
+# Player will be kicked if he disagree with rules
+kickMessage: '&cYou must agree with terms!'
+
+# For 1.8: LEVEL_UP
+acceptSound: ENTITY_PLAYER_LEVELUP
+
+# Which commands player can use when he has not agree with rules
+# It makes no sense because he unable to close inventory, but still
+allowedCommands: []
+
+
+
+
+
+
+    
